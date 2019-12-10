@@ -1,0 +1,17 @@
+.searchPanel {
+    padding: 0;
+    display: flex; // gdybym nie uzyl tego, to width:100% spowodowaloby, ze pasek mi na dole wyskoczy zebym przesunal dalej, jakbe te width mialo wiecej niz 100%
+}
+
+.inputSearch {
+    font-family: 'Kalam', cursive;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 15%;
+    font-size: 1.2rem;
+    border: 1px solid black;
+}
+
+.inputSearch:focus {
+    background-color: #FFFAF0;
+}

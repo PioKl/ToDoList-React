@@ -1,0 +1,49 @@
+.addTaskPanel {
+    padding: 0;
+    display: flex;
+    //flex-flow: row nowrap;
+}
+
+.inputAddTask {
+    font-family: 'Kalam', cursive;
+    width: 80%;
+    padding: 1rem;
+    padding-left: 15%;
+    font-size: 1.2rem;
+    border: 1px solid black;
+}
+
+.inputAddTask:focus {
+    background-color: #FFFAF0;
+}
+
+.buttonAddTask {
+    border: 1px solid black;
+    border-left: 0;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-family: 'Kalam', cursive;
+    background-color: white;
+    color: red;
+    text-align: center;
+    width: 20%;
+    transition: 0.5s;
+}
+
+.buttonAddTask:hover {
+    cursor: pointer;
+    border: 0;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.inputAddTask,
+.buttonAddTask {
+    border-top: 0;
+}
+
+//powstrzymanie obwodki przy kliknieciu przycisku
+button::-moz-focus-inner {
+    border: 0;
+}

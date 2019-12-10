@@ -1,0 +1,87 @@
+.taskItemContainer {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.taskItemContainer:nth-child(odd) .taskItem {
+    background-color: red;
+}
+
+.taskItemContainer:nth-child(odd) .taskItem:hover {
+    background-color: rgb(189, 38, 38);
+}
+
+.taskItemContainer:nth-child(even) .taskItem {
+    background-color: #F96714;
+}
+
+.taskItemContainer:nth-child(even) .taskItem:hover {
+    background-color: rgb(223, 84, 3);
+}
+
+.taskItem {
+    font-family: 'Kalam', cursive;
+    width: 80%;
+    padding: 1rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    padding-left: 15%;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-top: 0;
+    transition: .5s;
+    align-self: center; //powoduje, ze mi sie padding zmniejsza wiec z 1rem dalem 1.3rem
+}
+
+.taskItem:hover {
+    transition: .5s;
+    cursor: pointer;
+}
+
+.removeTaskItemButton {
+    border: 1px solid black;
+    border-top: 0;
+    border-left: 0;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-family: 'Kalam', cursive;
+    background-color: #F8F8FF;
+    color: black;
+    text-align: center;
+    width: 20%;
+    transition: .5s;
+}
+
+.removeTaskItemButton:hover {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 0;
+    transform: scale(1.1);
+    background-color: grey;
+    color: white;
+    transition: .5s;
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.removeTaskItemButton::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-size: 2rem;
+    content: '\f2ed';
+}
+
+.checkItem {
+    text-decoration: line-through;
+}
+
+.checkItem::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: '\f07a';
+    position: absolute;
+    left: 2%;
+    height: 15px;
+    width: 7px;
+    margin-top: 5px;
+}
